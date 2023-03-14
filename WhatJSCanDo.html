@@ -6,11 +6,30 @@
                 document.getElementById("demo").innerHTML="Using function to display";
             }
         </script>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>What Can JavaScript do?</h1>
+        <p>This file demonstrates how we can output messages using different method on JavaScript </p>
         <p id="demo">JavaScript can change HTML content</p>
-        <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click here</button>
-        <button type="button" onclick=myFunction()>Click here to display new message using function</button>
+        <div>
+            <h2>inner html</h2>
+            <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click here</button>
+            <button type="button" onclick=myFunction()>Click here to display new message using function</button>
+        </div>
+        
+
+        <div>          
+            <h2>document write</h2>
+            <button type="button" onclick="document.write('written using document.write()')"> try me</button>
+        </div>
+
+        <div>
+            <h2>window alert</h2>
+            <p>When you first visited this website, an alert is show to the user</p>
+            <script>
+                alert("this is an alert window");
+            </script>
+        </div>
     </body>
 </html>
