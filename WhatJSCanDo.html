@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML="Using function to display";
+            }
+        </script>
     </head>
     <body>
         <h1>What Can JavaScript do?</h1>
-        <p>JavaScript can change HTML content</p>
+        <p id="demo">JavaScript can change HTML content</p>
         <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click here</button>
+        <button type="button" onclick=myFunction()>Click here to display new message using function</button>
     </body>
 </html>
