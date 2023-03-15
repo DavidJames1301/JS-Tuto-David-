@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function randomFunct(){
+                let x,y,z;
+                x = 10;
+                y = 2;
+                z = x+y
+            }
 
+            function conte(z){
+                z = z + 2;
+                document.getElementById("answer").innerHTML = ("answer" + z);
+            }
+            
+        </script>
     </head>
     <body>
         <h1>Statements, variable and syntax</h1>
@@ -10,12 +23,13 @@
             y = 2 <br>
             z = x + y <br>
         </p>
+        <p id="answer">Answer</p>
         <script>
-            var x,y,z;
-            x = 10;
-            y = 2;
-            z = x+y
-            document.write("the solution to z = x + y : "+z);
+            let z = 0;
+            document.write(z);
+
+            
         </script>
+        <button onclick="conte()">Click 4 ans</button>
     </body>
 </html>

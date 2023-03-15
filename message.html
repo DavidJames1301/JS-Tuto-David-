@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module">
+            import {myName,age} from "./person.js";
+
+            var text = "Hello my name is "+ myName +" and I am "+ age +" years old. name and age is imported from a module (person.js)";
+
+            function myFunction(){
+                document.getElementById("messageHere").innerHTML = text;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>This file demonstrates the use of module to display a message</h1>
+        <p>Here is default message on load</p>
+        <button id="btn" onclick="myFunction()">Click here to display message from module</button>
+    </body>
+</html>
